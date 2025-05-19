@@ -1,3 +1,5 @@
+from A_Sintactico.AST import Assign, BinOp, Number, Variable
+
 symbol_table = {'b': 'int'}  # Pretend 'b' is declared
 
 def validate_semantics(node):
@@ -10,5 +12,3 @@ def validate_semantics(node):
     elif isinstance(node, Assign):
         validate_semantics(node.expr)
         symbol_table[node.var.name] = 'int'  # Mock type assignment
-
-validate_semantics(ast)  # Raises NameError if 'a' or 'b' is undeclared

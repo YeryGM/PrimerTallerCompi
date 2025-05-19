@@ -43,8 +43,3 @@ def tokenize(code):
         
         yield (token_type, value)
         pos = match.end()
-
-# Example usage
-code = "a = 3 + b * 2;"
-for token in tokenize(code):
-    print(token)

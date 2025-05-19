@@ -1,3 +1,5 @@
+from A_Sintactico.AST import Assign, BinOp, Number, Variable
+
 class TACGenerator:
     def __init__(self):
         self.temp_count = 0

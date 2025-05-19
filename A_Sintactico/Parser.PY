@@ -1,5 +1,4 @@
-# needs to impor from AST.py
-from AST import Assign, BinOp, Number, Variable
+from .AST import Assign, BinOp, Number, Variable
 
 class Parser:
     def __init__(self, tokens):
